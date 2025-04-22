@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.inputContainer {
+    margin-bottom: 10px;
+}
+
+.textMarker {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.removeButton {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(194, 31, 31);
+}
+
+.removeButton:hover {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(111, 28, 28);
+}
+
+.MarkerBox{
+    background-color: #5a5a5b40;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+li:hover {
+    background: #0056b3;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #218838;
+}
