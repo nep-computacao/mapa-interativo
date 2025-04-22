@@ -3,8 +3,8 @@
 ## 1. Clone o repositório (caso ainda não tenha clonado)
 
 ```bash
-git clone https://github.com/usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+git clone https://github.com/nep-computacao/mapa-interativo.git
+cd mapa-interativo
 ```
 
 ## 2. Verifique em qual branch você está atualmente
@@ -13,7 +13,7 @@ cd nome-do-repositorio
 git branch
 ```
 
-## 3. Se estiver em um branch diferente da `develop` mude para a branch `develop`
+## 3. Mude para a branch `develop` caso esteja em um branch diferente.
 
 ```bash
 git fetch
