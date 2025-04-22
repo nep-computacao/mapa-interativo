@@ -6,6 +6,14 @@ Esta API permite gerenciar marcadores, fornecendo endpoints para criar, atualiza
 
 Você deve ter o Python instalado no seu computador.
 
+## Abrindo projeto
+
+Abra o terminal e entre na pasta `backend`:
+
+```sh
+cd backend
+```
+
 ## Criando um Ambiente Virtual
 
 Crie um ambiente virtual para isolar as dependências do projeto:
