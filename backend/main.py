@@ -2,6 +2,7 @@ from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 
+- 
 from marcador_model import Marcador
 from marcador_schema import MarcadorCreate, MarcadorUpdate, MarcadorDB
 from database import get_db
