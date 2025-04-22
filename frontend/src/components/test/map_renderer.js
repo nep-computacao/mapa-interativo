@@ -40,8 +40,6 @@ const MapComponent = () => {
       map.fitBounds(bounds);
     }
   }, [map]);
-  
-  }, []);
 
   const handleClick = (event) => {
     const newPoint = { lat: event.latLng.lat(), lng: event.latLng.lng(), title: `Ponto ${markers.length + 1}` };
