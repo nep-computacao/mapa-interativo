@@ -1,29 +1,21 @@
-# API de Marcadores
+# 🗺️ API de Marcadores
+Esta API permite gerenciar marcadores geográficos, oferecendo endpoints para criar, atualizar, listar e deletar marcadores.
 
-Esta API permite gerenciar marcadores, fornecendo endpoints para criar, atualizar, listar e deletar marcadores.
+## ✅ Pré-requisitos
+Antes de começar, certifique-se de que você possui o Python instalado em sua máquina.
 
-## Pre-requisitos
-
-Você deve ter o Python instalado no seu computador.
-
-## Abrindo projeto
-
-Abra o terminal e entre na pasta `backend`:
-
+## 📁 Acessando o Diretório do Projeto Backend
+Abra o terminal e navegue até a pasta do `backend`:
 ```sh
 cd backend
 ```
 
-## Criando um Ambiente Virtual
-
+## 🧪 Criando e Ativando o Ambiente Virtual
 Crie um ambiente virtual para isolar as dependências do projeto:
-
 ```sh
 python -m venv venv
 ```
-
-Ative o ambiente virtual:
-
+Ative o ambiente:
 - **Windows:**
   ```sh
   venv\Scripts\activate
@@ -33,45 +25,36 @@ Ative o ambiente virtual:
   source venv/bin/activate
   ```
 
-## Instalando Dependências
-
-Instale as dependências necessárias para rodar a API:
-
+## 📦 Instalando Dependências
+Instale os pacotes necessários:
 ```sh
 pip install -r requirements.txt
 ```
 
-## Executando a Aplicação
-
-Após configurar o ambiente, execute a API com o seguinte comando:
-
-```sh
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
-ou 
-
+## ▶️ Executando a Aplicação
+Execute a API com:
 ```sh
 uvicorn main:app --reload
 ```
+Ou, se desejar especificar host e porta:
+```sh
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+```
+A aplicação estará disponível em:
+👉 `http://127.0.0.1:8000/`
 
-A API estará rodando em `http://127.0.0.1:8000/` (por padrão).
+## 📚 Documentação da API
+A documentação interativa (Swagger UI) estará disponível em:
+👉 `http://127.0.0.1:8000/docs`
 
-## Documentação da API
-
-A documentaçãoda API estará rodando por padrão em `http://127.0.0.1:8000/docs`
-
-## Configurando o CORS
-
-Se o front-end estiver rodando em um domínio diferente, será necessário configurar o CORS. Para isso, edite o código da API e adicione a biblioteca `fastapi.middleware.cors`:
-
-1. Instale o pacote:
-
+## 🌐 Configurando CORS
+Se o front-end estiver hospedado em um domínio diferente, configure o CORS da seguinte forma:
+1. Instale o pacote com suporte completo ao FastAPI:
    ```sh
    pip install fastapi[all]
    ```
 
-2. No seu arquivo principal (ex: `main.py`), importe e configure o CORS:
-
+2. No arquivo `main.py`, adicione o seguinte:
    ```python
    from fastapi import FastAPI
    from fastapi.middleware.cors import CORSMiddleware
@@ -87,20 +70,5 @@ Se o front-end estiver rodando em um domínio diferente, será necessário confi
    )
    ```
 
-Se precisar restringir o acesso a um domínio específico, altere a configuração:
+✅ Para maior segurança, substitua `"*"` por `"http://localhost:3000"` ou outro domínio específico do front-end.
 
-```python
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Substitua pela URL do seu front-end
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-```
-
-Agora, a API estará pronta para receber requisições do seu front-end sem problemas de CORS.
-
-## Contribuição
-
-Sinta-se à vontade para abrir issues ou pull requests para melhorias no projeto.

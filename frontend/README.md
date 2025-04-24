@@ -1,39 +1,46 @@
-# MAPA INTERATIVO
+# 🌍 Mapa Interativo - Front-end
 
-## 1. Sobre o Projeto
-Este projeto foi desenvolvido para o **Núcleo de Extensão e Práticas (NEP)** no contexto do **Projeto MAPAS** da Universidade de Fortaleza. O objetivo é criar uma aplicação interativa que utilize a API do Google Maps como forma de avaliação no NEP.
+Este é o front-end do projeto **Mapa Interativo**, uma aplicação React que consome a API de marcadores e exibe os pontos geográficos em um mapa do Google Maps.
 
-## 2. Tecnologias Utilizadas
-- **React.js, Node.js, Javascript, JSX** para a construção da interface
-- **Google Maps API** para a exibição do mapa e manipulação dos pontos
-- **CSS** para estilização
+## 🧰 Tecnologias Utilizadas
+- React
+- Zustand (Gerenciamento de estado)
+- @react-google-maps/api
+- CSS Modules
 
-## 3. Funcionalidades
-- Exibir um mapa centrado no campus da **Universidade de Fortaleza**.
-- Permitir que o usuário adicione marcadores no mapa de duas formas:
-  - **Clicando no mapa**
-  - **Inserindo manualmente a latitude, longitude e nome do ponto**
-- Listar os marcadores adicionados com informações de nome e coordenadas.
-- Centralizar o mapa ao clicar em um marcador na lista.
+## ✅ Pré-requisitos
+Antes de iniciar, você precisa ter:
+- Node.js instalado ([Baixe aqui](https://nodejs.org/pt))
+- A chave da API do Google Maps
+- A API de backend rodando (consulte o README do backend)
 
-## 4. Estrutura do Código
-### `MapComponent.js`
-Este arquivo contém a lógica principal do projeto.
+## 📁 Acessando o Diretório do Projeto
+Abra o terminal e entre na pasta do front-end:
+```sh
+cd frontend
+```
 
-#### **Principais Estados (useState)**
-- `markers`: Armazena os marcadores adicionados pelo usuário.
-- `newMarker`: Guarda os dados do novo marcador antes de ser adicionado.
-- `mapRef`: Referência para o mapa, permitindo movimentá-lo.
-- `center`: Define o centro atual do mapa.
+## 🔑 Configurando a API Key do Google Maps
+1. Crie um arquivo `.env` na raiz do projeto (fora da pasta `src`).
+2. Adicione a variável abaixo:
+```env
+REACT_APP_GOOGLE_MAPS_API_KEY=YOUR_API_KEY_AQUI
+```
+**Importante:** variáveis de ambiente no React com `create-react-app` devem começar com `REACT_APP_`.
 
-#### **Efeitos (useEffect)**
-- Inicializa o primeiro marcador com a localização padrão no campus da Unifor.
+## 📦 Instalando Dependências
+Instale os pacotes necessários com o npm ou yarn:
+```sh
+npm install
+```
 
-#### **Principais Funções**
-- `handleClick(event)`: Adiciona um marcador na posição clicada no mapa.
-- `handleAddMarker()`: Adiciona um marcador manualmente a partir dos inputs de latitude e longitude.
-- `handleMarkerClick(lat, lng)`: Centraliza o mapa no marcador clicado na lista.
+## ▶️ Iniciando o Projeto
+Execute a aplicação:
+```sh
+npm start
+```
+O front-end estará disponível em:
+👉 `http://localhost:3000`
 
-## 5. Data de Entrega
-- **Apresentação e entrega final:** 25/02/2025
-
+## 🌐 Comunicação com a API
+O front-end faz requisições para a API via `fetch`. Certifique-se de que a API está acessível no endereço correto `http://127.0.0.1:8000`.
