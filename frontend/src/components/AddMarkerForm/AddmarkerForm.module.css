@@ -1,0 +1,53 @@
+.container_form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  height: 525px; /* 🔹 Definindo altura igual ao mapa */
+}
+
+.title {
+  margin-bottom: 10px;
+  text-align: center;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+/* Inputs */
+.input[type="number"], .input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f9fa;
+  transition: 0.3s;
+}
+
+.input[type="number"]:focus, .input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: white;
+}
+
+/* Botão */
+.button_addMarker {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button_addMarker:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

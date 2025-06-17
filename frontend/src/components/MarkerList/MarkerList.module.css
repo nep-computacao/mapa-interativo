@@ -1,0 +1,55 @@
+.marker_list_container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.header_list {
+  text-align: center;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+.marker_list {
+  padding: 0;
+}
+
+.marker_item {
+  list-style-type: none;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.marker_item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões dentro do card */
+.marker_item button {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.marker_item button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
